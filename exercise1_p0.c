@@ -45,9 +45,8 @@ long long int factorial_i(int num) {
  *
  */
 long long int factorial_r(int num){
-
-// Implement this function
-
+    long long int result;
+    return (long long int)  num * factorial_r(num-1);
 }
 
 /**
