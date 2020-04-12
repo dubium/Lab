@@ -45,8 +45,11 @@ long long int factorial_i(int num) {
  *
  */
 long long int factorial_r(int num){
-    long long int result;
-    return (long long int)  num * factorial_r(num-1);
+    //long long int result;
+
+    if (num == 1)   { return 1; }
+    else            { return (long long int)  num * factorial_r(num-1); }
+
 }
 
 /**
