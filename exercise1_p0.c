@@ -28,9 +28,12 @@ int get_binary(int num){
  *
  */
 long long int factorial_i(int num) {
-
-// Implement this function
-
+    int i;
+    long long int result=1;
+    for (i=2; i <= num; i++) {
+        result = result * i;
+    }
+    return result;
 }
 
 /**
